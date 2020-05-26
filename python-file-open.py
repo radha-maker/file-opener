@@ -17,9 +17,7 @@ class SampleApp(tk.Tk):
         self.menubarr = tk.Menu(self)
         self.filemenubarr =tk.Menu(self.menubarr, tearoff = 0)
         self.filemenubarr.add_command(label = "Open File", command = self.open_file)
-        # Bhen chod aa erro ni to maa chudai didi mari pan aato o bo sellu hatu 
-        # are aato to self carine function call karavanu hato bennchod ane aa hamesha yaad rakhajo
-        # so bhenka luda aaj pata chal hgaya ki karana kya hai aur ab koi samasya nahi hai 
+        
         self.filemenubarr.add_command(label = "Open Image", command = None )
         self.filemenubarr.add_command( label="Exit", command= self.quit)
         self.config(menu = self.menubarr)
